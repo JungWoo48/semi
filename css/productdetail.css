@@ -342,3 +342,47 @@ margin-top: 3vh;
 }
 
 
+
+.items{
+  height: 200px; display: flex;
+  justify-content: center; align-items: center;
+}
+.item{
+  height: 200px; display: flex;
+  justify-content: center; align-items: center;
+  display: none;
+}
+.active{
+  display: flex;
+}
+
+.prev{
+ width: 50px; height: 20px;
+  border: none; background-color: coral; color: white; outline: none; 
+  
+}
+
+.next {
+  width: 50px; height: 20px;
+  border: none; background-color: coral; color: white; outline: none; 
+}
+
+.stepper{
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+.step{
+  width: 20px; height: 20px;
+  border-radius: 50%;
+  background-color: gray;
+  margin: 0 6px;
+}
+.active-step{
+  background-color: orange;
+}
+
+.items > div >img {
+  width: 200px;
+  height: 200px;
+}
