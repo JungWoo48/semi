@@ -13,11 +13,11 @@ document.getElementById("query").addEventListener("mouseover", e => {
 });
 
 /* ----------------------------------------------------------- */
-let curPos = 0; // 현재 보이는 요소의 인덱스 번호
+let curPos = 0;
 
 function prev(){
     if(curPos > 0){
-        $("button").removeAttr("disabled") // 모든 버튼 사용할 수 있게!
+        $("button").removeAttr("disabled") // 모든 버튼 사용할 수 있게하기
         // toggleClass : 클래스가 있으면 제거, 없으면 생성!
         $($(".item")[curPos]).toggleClass("active")
         $($(".step")[curPos]).toggleClass("active-step")
@@ -25,7 +25,7 @@ function prev(){
         curPos -= 1;
         $($(".item")[curPos]).toggleClass("active")
         $($(".step")[curPos]).toggleClass("active-step")
-        $(".active").fadeIn(800); // 새로운 액티브 요소만 스르륵 나타난다
+        $(".active").fadeIn(800); // 새로운 액티브 요소만 나타난다
     }
     if(curPos == 0){
         $(".prev")[0].setAttribute("disabled",'true')
